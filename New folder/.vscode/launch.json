@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Data Ingestion Service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/services/data-ingestion/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ENVIRONMENT": "development",
+                "DEBUG": "true",
+                "LOG_LEVEL": "DEBUG"
+            },
+            "args": [],
+            "justMyCode": false
+        },
+        {
+            "name": "Debug Feature Engineering Service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/services/feature-engineering/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ENVIRONMENT": "development",
+                "DEBUG": "true",
+                "LOG_LEVEL": "DEBUG"
+            },
+            "args": [],
+            "justMyCode": false
+        },
+        {
+            "name": "Debug Signal Generation Service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/services/signal-generation/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ENVIRONMENT": "development",
+                "DEBUG": "true",
+                "LOG_LEVEL": "DEBUG"
+            },
+            "args": [],
+            "justMyCode": false
+        },
+        {
+            "name": "Debug Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["tests/", "-v", "-s"],
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ENVIRONMENT": "test"
+            },
+            "justMyCode": false
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "include": [
+        "services",
+        "shared", 
+        "scripts",
+        "tests"
+    ],
+    "exclude": [
+        "**/ai_trading_env",
+        "**/__pycache__",
+        "**/*.pyc"
+    ],
+    "extraPaths": [
+        ".",
+        "./shared",
+        "./services", 
+        "./scripts"
+    ],
+    "pythonVersion": "3.13",
+    "pythonPlatform": "Windows",
+    "typeCheckingMode": "basic",
+    "reportMissingImports": "information",
+    "reportMissingTypeStubs": false,
+    "reportGeneralTypeIssues": "warning"
+}
